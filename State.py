@@ -1,0 +1,61 @@
+import random
+
+# Define the distribution for music app users across U.S. states, including Washington D.C.
+state_distribution = {
+    "Alabama": 1,
+    "Alaska": 1,
+    "Arizona": 2,
+    "Arkansas": 1,
+    "California": 14,
+    "Colorado": 2,
+    "Connecticut": 1,
+    "Delaware": 1,
+    "Florida": 7,
+    "Georgia": 4,
+    "Hawaii": 1,
+    "Idaho": 1,
+    "Illinois": 5,
+    "Indiana": 2,
+    "Iowa": 1,
+    "Kansas": 1,
+    "Kentucky": 1,
+    "Louisiana": 1,
+    "Maine": 1,
+    "Maryland": 2,
+    "Massachusetts": 2,
+    "Michigan": 3,
+    "Minnesota": 2,
+    "Mississippi": 1,
+    "Missouri": 2,
+    "Montana": 1,
+    "Nebraska": 1,
+    "Nevada": 1,
+    "New Hampshire": 1,
+    "New Jersey": 3,
+    "New Mexico": 1,
+    "New York": 8,
+    "North Carolina": 3,
+    "North Dakota": 1,
+    "Ohio": 4,
+    "Oklahoma": 1,
+    "Oregon": 1,
+    "Pennsylvania": 5,
+    "Rhode Island": 1,
+    "South Carolina": 1,
+    "South Dakota": 1,
+    "Tennessee": 2,
+    "Texas": 10,
+    "Utah": 1,
+    "Vermont": 1,
+    "Virginia": 2,
+    "Washington": 2,
+    "Washington D.C.": 1,
+    "West Virginia": 1,
+    "Wisconsin": 2,
+    "Wyoming": 1
+}
+
+# Generate a random state based on the distribution
+state = random.choices(list(state_distribution.keys()), weights=state_distribution.values())[0]
+
+print(state)
